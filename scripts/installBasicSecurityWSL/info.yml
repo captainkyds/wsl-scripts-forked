@@ -1,0 +1,9 @@
+name: installBasicSecurity
+author: captainkyd
+version: 1.0.0
+license: Debian
+git: git@github.com:captainkyds/captainkyds_scripts4wsl.git
+distro: Debian 
+description: This script installs all the basic security tools I consider must have on any nix environment I work on.
+packages: ufw (uncomplicated firewall), psad (auto block that parses the fw logs with the conf file already configured), fail2ban (monitors ssh and bans after a few failed logins), tor (you know right?), proxychains (add this before a command to route all of that command's traffic through tor, clamav (virus scanner)
+future: I will be adding a build script for a command that scans the nix system recursively starting at / and then adding it as a cron job so it runs automatically soo keep your eyes peeled for when that script launches.
